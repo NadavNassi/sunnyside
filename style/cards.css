@@ -1,0 +1,96 @@
+.cards{
+    margin: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+
+.card-title{
+    font-size: 2.8rem;
+}
+
+.cards img{
+    width: 100%;
+}
+
+.cards .description{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.reverse{
+    grid-row: 2 / 3;
+}
+
+.something{
+    font-family: barlow;
+    margin: 10px auto;
+    width: 65%;
+}
+
+.btn{
+    border: none;
+    background-color: unset;
+    text-transform: uppercase;
+    font-family: fraunces-bold;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.btn-yellow:hover{
+    box-shadow: inset 0px -7px 0 hsl(51, 100%, 49%);
+}
+
+.btn-red:hover{
+    box-shadow: inset 0px -7px 0 hsl(7, 99%, 70%);
+}
+
+.btn-yellow:hover,
+.btn-red:hover{
+    width: max-content;
+    align-self: center;
+}
+
+.card{
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.card p {
+    margin-bottom: 60px;
+    justify-self: center;
+    align-self: center;
+    width: 300px;
+}
+
+
+.card-left{
+    background-image: url('../images/desktop/image-graphic-design.jpg');
+    background-position: center;
+}
+
+.card-right{
+    background-image: url('../images/desktop/image-photography.jpg');
+    background-position: center;
+}
+
+@media (min-width: 768px){
+    .cards{
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+    }
+}
+

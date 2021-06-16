@@ -1,0 +1,26 @@
+@import "./fonts.css";
+@import "./header.css";
+@import "./cards.css";
+@import "./clients.css";
+@import "./gallery.css";
+@import "./footer.css";
+
+html{
+    font-size: 18;
+    font-family: fraunces;
+}
+
+body{
+    margin: 0;
+    background-color: hsl(0, 0%, 100%);
+    width: 100vw;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }

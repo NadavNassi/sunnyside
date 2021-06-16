@@ -1,0 +1,62 @@
+header{
+    background-image: url('../images/desktop/image-header.jpg');
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 55.6vw;
+    background-size: contain;
+    color: hsl(0, 0%, 100%);
+}
+
+.logo{
+    font-family: barlow;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav > * {
+    margin-inline: 1.5rem;
+}
+
+nav ul {
+    display: none;
+}
+nav ul > *{
+    padding: 0.4rem;
+    background-color: hsla(0, 0%, 100%, 0);
+    transition: ease-out 0.3s;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-family: barlow;
+}
+
+nav ul > *:hover{
+    background-color: hsla(0, 0%, 100%, 0.562);
+    cursor: pointer;
+    transition: ease-in 0.3s;
+    /* padding: 10px; */
+    border-radius: 2rem;
+}
+
+.hero-title{
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bolder;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    font-family: fraunces-bold;
+}
+
+@media (min-width: 768px){
+    nav ul {
+        display: flex;
+        text-decoration: none;
+        list-style: none;
+        width: 25%;
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,55 @@
+.clients{
+    min-height: 600px;
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    justify-content: center;
+}
+
+.clients>*{
+    font-family: barlow;
+}
+
+.clients h3 {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: rgb(150, 153, 155);
+    font-weight: bolder;
+}
+
+.clients-story{
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 0 3.55rem;
+    margin-inline: 15rem;
+}
+
+.client img{
+    width: 25%;
+    border-radius: 100px;
+}
+
+.client p {
+    font-family: barlow;
+    font-size: 0.9rem;
+}
+
+.client small{
+    font-family: barlow;
+    color: rgb(150, 153, 155);
+}
+
+
+
+@media (min-width: 768px){
+    .clients{
+        grid-template-columns: unset;
+        grid-template-rows: 1fr 2fr;
+    }
+    .clients-story{
+        grid-template-rows: unset;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
